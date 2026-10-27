@@ -80,10 +80,7 @@ jobs:
     docker:
       name: containerization
       needs: [unit-testing, code-coverage]
-
-      permissions:
-        package: write
-
+      
       runs-on: ubuntu-latest
       steps:
       - name: checkout repository
